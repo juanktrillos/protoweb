@@ -1,0 +1,24 @@
+<div class="backgroundSlider">
+  <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="http://cargolog.us/wp-content/uploads/2013/09/slide-one.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="http://airportlimostoronto.ca/wp-content/uploads/2016/04/slider-500.jpg" style="width:100%">
+      </div>
+    
+      <div class="mySlides fade">
+        <img src="https://www.hostales.com/city_images/Italy/landmarks/rome/colosseum.jpg" style="width:100%">
+      </div>
+    
+      <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+      <a class="next" (click)="plusSlides(1)">&#10095;</a>
+    </div>
+    
+    <div class="dots">
+      <span class="dot" (click)="currentSlide(1)"></span>
+      <span class="dot" (click)="currentSlide(2)"></span>
+      <span class="dot" (click)="currentSlide(3)"></span>
+    </div> 
+</div>

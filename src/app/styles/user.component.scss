@@ -1,0 +1,191 @@
+$blue: #29176c;
+$red: #da251c;
+
+.backgroundUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: sans-serif;
+    background-color: lightgray;
+
+    .headerUser{
+        display: flex;
+        width: 90%;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em;
+        background-color: white;
+        border-radius: 8px;
+        padding: 1em 0;
+
+        .ImageUser{
+            width: 30%;
+            text-align: center;
+            img{
+                width: 60%;
+            }
+        }
+        
+        .userName{
+            width: 70%;
+            font-size: 3em;
+            text-align: center;
+            color: $blue;
+        }
+    }
+
+    .contentBox{
+        width: 90%;
+        margin: 1em 0;
+
+        .infoUser{
+            border: 3px solid $blue;
+            font-size: 2em;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            border-radius: 4px 4px 0 0;
+            
+            .info{
+                width: 50%;
+                padding: 0.5em 0;     
+                cursor: pointer;       
+            }
+
+            .PersonalInfo{
+                color: white;
+                background-color: $blue;
+            }
+
+            .travelInfo{
+                background-color: white;
+                color: $blue;
+            }
+        }
+
+        .infoData{
+            width: 100%;
+            background-color: $blue;
+            display: flex;
+            justify-content: center;
+            padding: .2em 0;
+            border-radius: 0 0 4px 4px;
+            flex-wrap: wrap;
+
+            .PersonalData{
+                width: 99%;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                border-radius: 8px;
+                align-items: center;
+
+                .fullName, .passBox, .otros{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 2em 0;
+                }
+
+                input{
+                    width: 40%;
+                    padding: 1em;
+                    margin: 0.5em 2em;
+                    border: none;
+                    border-bottom: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                input:focus{
+                    border-bottom: 2px solid rgb(77, 77, 77);
+                }
+
+                .button{
+                    background-color: #010186;
+                    padding: 1em;
+                    border-radius: 4px;
+                    color: white;
+                    font-weight: bold;
+                    text-align: center;
+                    cursor: pointer;
+                }
+                .button:hover{
+                    background-color: #0d0d49;
+                }
+
+                .buttonPassword, {
+                    margin: 15%;
+                    width: 14%;
+                }
+
+                .buttonSave{
+                    margin: 2em;
+                }
+            }
+
+            .travelData{
+                width: 99%;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                border-radius: 8px;
+                align-items: center;
+
+                .tags{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                .tag{
+                    width: 25%;
+                    padding: 1em 0;
+                    text-align: center;
+                    font-weight: bold;
+                    color: rgb(12, 12, 97);
+                    border-left: 1px solid $blue;
+                    border-right: 1px solid $blue;
+                    cursor: pointer;
+                }
+
+                .this{
+                    background-color: $blue;
+                    color: white;
+                }
+
+                .contentTravelData{
+                    // padding: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .headerUser{
+        width: 100% !important;
+        margin: 0 !important;
+
+        .userName{
+            font-size: 2em !important;
+        }
+    }
+
+    .contentBox{
+        width: 100% !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    .contentTravelData{
+        width: 100% !important;
+        border-radius: 0 !important;
+    }
+    
+}

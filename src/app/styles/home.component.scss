@@ -1,0 +1,39 @@
+$blue: #29176c;
+$red: #da251c;
+
+.backgroundHome{
+    font-family: sans-serif;
+}
+
+.categories{
+    display: flex;
+    justify-content: space-around;
+}
+
+.packages{
+    text-align: center;
+    padding-top: 2em;
+    background-color: $red;
+    color: white;
+
+    .contentPackInHome{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .titlePackInHome{
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .categories{
+        flex-direction: column;
+    }
+
+    .contentPackInHome{
+        flex-direction: column;
+    }
+}

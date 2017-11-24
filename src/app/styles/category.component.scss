@@ -1,0 +1,29 @@
+$blue: #29176c;
+$red: #da251c;
+
+.backgroundCat{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    color: rgb(9, 9, 140);
+    font-weight: bold;
+    border: 3px solid $blue;
+    div{
+        text-align: center;
+        img{
+            width: 80%;
+        }
+
+        p{
+            text-align: justify;
+            padding: 0 1em;
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .backgroundCat{
+        flex-direction: column;
+    }
+}
